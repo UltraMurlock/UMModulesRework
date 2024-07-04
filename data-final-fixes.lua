@@ -1,4 +1,4 @@
-require("prototypes.modules")
+require("prototypes.vanilla-modules")
 
 if mods["RFT-modules"] then
     require("compatibility-scripts.RFT-modules")
