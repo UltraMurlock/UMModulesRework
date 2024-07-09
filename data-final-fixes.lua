@@ -23,6 +23,7 @@ PmPollutionStart = settings.startup["UMModulesRework-ProductivityModule-StartPol
 PmPollutionMult = settings.startup["UMModulesRework-ProductivityModule-PollutionPenaltyMultiplierPerLevel"].value
 
 
+
 require("scripts.util")
 require("scripts.base-modules")
 require("prototypes.vanilla-modules")
@@ -34,4 +35,8 @@ end
 
 if mods["modules-t4"] then
     require("compatibility-scripts.modules-t4")
+end
+
+if mods["space-exploration"] then
+    require("compatibility-scripts.space-exploration")
 end
