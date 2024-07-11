@@ -44,9 +44,43 @@ data:extend({
 		maximum_value = 5,
         default_value = 2,
 		order = "04"
-    },
+    }
+})
+
+if(mods["space-exploration"]) then
+    data:extend({
+        { --PollutionPenalty
+            type = "bool-setting",
+            name = "UMModulesRework-SpeedModule-PollutionPenalty",
+            setting_type = "startup",
+            default_value = true,
+            order = "05"
+        },
+        {
+            type = "double-setting",
+            name = "UMModulesRework-SpeedModule-StartPollutionPenalty",
+            setting_type = "startup",
+            minimum_value = 0,
+            maximum_value = 10,
+            default_value = 0.05,
+            order = "06"
+        },
+        {
+            type = "double-setting",
+            name = "UMModulesRework-SpeedModule-PollutionPenaltyMultiplierPerLevel",
+            setting_type = "startup",
+            minimum_value = 0.2,
+            maximum_value = 5,
+            default_value = 2,
+            order = "07"
+        }
+    })
 	
-	
+end
+
+
+
+data:extend({	
 	--EffectivityModule
 	{ --Consumption
         type = "double-setting",
@@ -55,7 +89,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.25,
-		order = "05"
+		order = "20"
     },
 	{
         type = "double-setting",
@@ -64,7 +98,7 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "06"
+		order = "21"
     },
 	
 	
@@ -73,7 +107,7 @@ data:extend({
         name = "UMModulesRework-EffectivityModule-PollutionBonus",
         setting_type = "startup",
         default_value = true,
-		order = "07"
+		order = "22"
     },
 	{
         type = "double-setting",
@@ -82,7 +116,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.05,
-		order = "08"
+		order = "23"
     },
 	{
         type = "double-setting",
@@ -91,9 +125,10 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "09"
+		order = "24"
     },
 	
+
 	
 	--ProductivityModule
 	{ --Productivity
@@ -103,7 +138,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.05,
-		order = "10"
+		order = "40"
     },
 	{
         type = "double-setting",
@@ -112,7 +147,7 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "11"
+		order = "41"
     },
 	
 	
@@ -121,7 +156,7 @@ data:extend({
         name = "UMModulesRework-ProductivityModule-ConsumptionPenalty",
         setting_type = "startup",
         default_value = true,
-		order = "12"
+		order = "42"
     },
 	{ 
         type = "double-setting",
@@ -130,7 +165,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.25,
-		order = "13"
+		order = "43"
     },
 	{
         type = "double-setting",
@@ -139,7 +174,7 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "14"
+		order = "44"
     },
 	
 	
@@ -148,7 +183,7 @@ data:extend({
         name = "UMModulesRework-ProductivityModule-SpeedPenalty",
         setting_type = "startup",
         default_value = true,
-		order = "15"
+		order = "45"
     },
 	{
         type = "double-setting",
@@ -157,7 +192,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.05,
-		order = "16"
+		order = "46"
     },
 	{
         type = "double-setting",
@@ -166,7 +201,7 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "17"
+		order = "47"
     },
 	
 	
@@ -175,7 +210,7 @@ data:extend({
         name = "UMModulesRework-ProductivityModule-PollutionPenalty",
         setting_type = "startup",
         default_value = true,
-		order = "18"
+		order = "48"
     },
 	{
         type = "double-setting",
@@ -184,7 +219,7 @@ data:extend({
 		minimum_value = 0,
 		maximum_value = 10,
         default_value = 0.05,
-		order = "19"
+		order = "49"
     },
 	{
         type = "double-setting",
@@ -193,7 +228,7 @@ data:extend({
 		minimum_value = 0.2,
 		maximum_value = 5,
         default_value = 2,
-		order = "20"
+		order = "50"
     },
 	
 	
@@ -203,7 +238,7 @@ data:extend({
         setting_type = "startup",
         default_value = 5,
 		allowed_values = {1, 2, 5, 10},
-		order = "21"
+		order = "100"
 	}
 })
 
@@ -214,7 +249,7 @@ if mods["RFT-modules"] then
 			name = "UMModulesRework-MergedModules",
 			setting_type = "startup",
 			default_value = true,
-			order = "22"
+			order = "110"
 		}
 	})
 end

@@ -6,6 +6,12 @@ function UpdateSpeedModule(name, level)
 	else
 		data.raw["module"][name].effect.consumption = nil
 	end
+
+	if(SmPollutionPenalty) then
+		data.raw["module"][name].effect.pollution = { bonus = Round(SmPollutionStart * SmPollutionMult ^ (level - 1)) }
+	else
+		data.raw["module"][name].effect.pollution = nil
+	end
 end
 
 
