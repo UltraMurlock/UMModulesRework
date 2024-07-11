@@ -238,7 +238,7 @@ data:extend({
         setting_type = "startup",
         default_value = 5,
 		allowed_values = {1, 2, 5, 10},
-		order = "100"
+		order = "90"
 	}
 })
 
@@ -249,7 +249,7 @@ if mods["RFT-modules"] then
 			name = "UMModulesRework-MergedModules",
 			setting_type = "startup",
 			default_value = true,
-			order = "110"
+			order = "95"
 		}
 	})
 end

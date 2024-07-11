@@ -3,6 +3,11 @@ SmSpeedMult = settings.startup["UMModulesRework-SpeedModule-SpeedMultiplierPerLe
 SmConsumptionPenalty = settings.startup["UMModulesRework-SpeedModule-ConsumptionPenalty"].value
 SmConsumptionStart = settings.startup["UMModulesRework-SpeedModule-StartConsumption"].value
 SmConsumptionMult = settings.startup["UMModulesRework-SpeedModule-ConsumptionMultiplierPerLevel"].value
+if mods["space-exploration"] then
+    SmPollutionPenalty = settings.startup["UMModulesRework-SpeedModule-PollutionPenalty"].value
+    SmPollutionStart = settings.startup["UMModulesRework-SpeedModule-StartPollutionPenalty"].value
+    SmPollutionMult = settings.startup["UMModulesRework-SpeedModule-PollutionPenaltyMultiplierPerLevel"].value
+end
 
 EmEffectivityStart = settings.startup["UMModulesRework-EffectivityModule-StartConsumptionBonus"].value
 EmEffectivityMult = settings.startup["UMModulesRework-EffectivityModule-ConsumptionBonusMultiplierPerLevel"].value
