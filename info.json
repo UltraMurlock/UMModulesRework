@@ -5,5 +5,5 @@
   "author": "UltraMurlock",
   "factorio_version": "1.1",
   "dependencies": [ "base >= 1.1", "?RFT-modules", "?modules-t4", "?space-exploration" ],
-  "description": "Rework module bonuses. Now the bonuses of the modules grow exponentially with increasing levels. The starting value, multipliers and some other parameters are configurable. Supports new modules from RFT-modules."
+  "description": ""
 } 

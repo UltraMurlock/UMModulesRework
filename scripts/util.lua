@@ -3,10 +3,10 @@ function Round(value)
 	return (math.ceil(value / RoundTo) * RoundTo)
 end
 
-function GetTextIndex(level)
-	if level == 1 then
+function GetTextIndex(tier)
+	if tier == 1 then
 		return ""
 	else
-		return "-"..level
+		return "-"..tier
 	end
 end
