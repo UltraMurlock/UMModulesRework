@@ -9,11 +9,11 @@ if mods["space-exploration"] then
     SmPollutionMult = settings.startup["UMModulesRework-SpeedModule-PollutionPenaltyMultiplierPerLevel"].value
 end
 
-EmEffectivityStart = settings.startup["UMModulesRework-EffectivityModule-StartConsumptionBonus"].value
-EmEffectivityMult = settings.startup["UMModulesRework-EffectivityModule-ConsumptionBonusMultiplierPerLevel"].value
-EmPollutionBonus = settings.startup["UMModulesRework-EffectivityModule-PollutionBonus"].value
-EmPolutionStart = settings.startup["UMModulesRework-EffectivityModule-StartPollutionBonus"].value
-EmPolutionMult = settings.startup["UMModulesRework-EffectivityModule-PollutionBonusMultiplierPerLevel"].value
+EmEfficiencyStart = settings.startup["UMModulesRework-EfficiencyModule-StartConsumptionBonus"].value
+EmEfficiencyMult = settings.startup["UMModulesRework-EfficiencyModule-ConsumptionBonusMultiplierPerLevel"].value
+EmPollutionBonus = settings.startup["UMModulesRework-EfficiencyModule-PollutionBonus"].value
+EmPolutionStart = settings.startup["UMModulesRework-EfficiencyModule-StartPollutionBonus"].value
+EmPolutionMult = settings.startup["UMModulesRework-EfficiencyModule-PollutionBonusMultiplierPerLevel"].value
 
 PmProductivityStart = settings.startup["UMModulesRework-ProductivityModule-StartProductivity"].value
 PmProductivityMult = settings.startup["UMModulesRework-ProductivityModule-ProductivityMultiplierPerLevel"].value

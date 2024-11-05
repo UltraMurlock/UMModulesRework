@@ -81,10 +81,10 @@ end
 
 
 data:extend({	
-	--EffectivityModule
+	--EfficiencyModule
 	{ --Consumption
         type = "double-setting",
-        name = "UMModulesRework-EffectivityModule-StartConsumptionBonus",
+        name = "UMModulesRework-EfficiencyModule-StartConsumptionBonus",
         setting_type = "startup",
 		minimum_value = 0,
 		maximum_value = 10,
@@ -93,7 +93,7 @@ data:extend({
     },
 	{
         type = "double-setting",
-        name = "UMModulesRework-EffectivityModule-ConsumptionBonusMultiplierPerLevel",
+        name = "UMModulesRework-EfficiencyModule-ConsumptionBonusMultiplierPerLevel",
         setting_type = "startup",
 		minimum_value = 0.2,
 		maximum_value = 5,
@@ -104,14 +104,14 @@ data:extend({
 	
 	{ --PollutionBonus
         type = "bool-setting",
-        name = "UMModulesRework-EffectivityModule-PollutionBonus",
+        name = "UMModulesRework-EfficiencyModule-PollutionBonus",
         setting_type = "startup",
         default_value = true,
 		order = "22"
     },
 	{
         type = "double-setting",
-        name = "UMModulesRework-EffectivityModule-StartPollutionBonus",
+        name = "UMModulesRework-EfficiencyModule-StartPollutionBonus",
         setting_type = "startup",
 		minimum_value = 0,
 		maximum_value = 10,
@@ -120,7 +120,7 @@ data:extend({
     },
 	{
         type = "double-setting",
-        name = "UMModulesRework-EffectivityModule-PollutionBonusMultiplierPerLevel",
+        name = "UMModulesRework-EfficiencyModule-PollutionBonusMultiplierPerLevel",
         setting_type = "startup",
 		minimum_value = 0.2,
 		maximum_value = 5,
