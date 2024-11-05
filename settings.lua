@@ -47,6 +47,36 @@ data:extend({
     }
 })
 
+if(mods["quality"]) then
+	data:extend({
+		{--QualityPenalty
+			type = "bool-setting",
+			name = "UMModulesRework-SpeedModule-QualityPenalty",
+			setting_type = "startup",
+			default_value = true,
+			order = "05"
+		},
+		{
+			type = "double-setting",
+			name = "UMModulesRework-SpeedModule-StartQualityPenalty",
+			setting_type = "startup",
+			minimum_value = 0,
+			maximum_value = 10,
+			default_value = 0.01,
+			order = "06"
+		},
+		{
+			type = "double-setting",
+			name = "UMModulesRework-SpeedModule-QualityPenaltyMultiplierPerLevel",
+			setting_type = "startup",
+			minimum_value = 0.2,
+			maximum_value = 5,
+			default_value = 2,
+			order = "07"
+		}
+	})
+end
+
 if(mods["space-exploration"]) then
     data:extend({
         { --PollutionPenalty
@@ -54,7 +84,7 @@ if(mods["space-exploration"]) then
             name = "UMModulesRework-SpeedModule-PollutionPenalty",
             setting_type = "startup",
             default_value = true,
-            order = "05"
+            order = "08"
         },
         {
             type = "double-setting",
@@ -63,7 +93,7 @@ if(mods["space-exploration"]) then
             minimum_value = 0,
             maximum_value = 10,
             default_value = 0.05,
-            order = "06"
+            order = "09"
         },
         {
             type = "double-setting",
@@ -72,10 +102,9 @@ if(mods["space-exploration"]) then
             minimum_value = 0.2,
             maximum_value = 5,
             default_value = 2,
-            order = "07"
+            order = "10"
         }
     })
-	
 end
 
 
@@ -241,6 +270,56 @@ data:extend({
 		order = "90"
 	}
 })
+
+if mods["quality"] then
+	data:extend({
+		--Quality Module
+		{--Quality
+			type = "double-setting",
+			name = "UMModulesRework-QualityModule-StartQuality",
+			setting_type = "startup",
+			minimum_value = 0,
+			maximum_value = 10,
+			default_value = 0.01,
+			order = "60"
+		},
+		{
+			type = "double-setting",
+			name = "UMModulesRework-QualityModule-QualityMultiplierPerLevel",
+			setting_type = "startup",
+			minimum_value = 0.2,
+			maximum_value = 5,
+			default_value = 2,
+			order = "61"
+		},
+
+		{--SpeedPenalty
+			type = "bool-setting",
+			name = "UMModulesRework-QualityModule-SpeedPenalty",
+			setting_type = "startup",
+			default_value = true,
+			order = "62"
+		},
+		{
+			type = "double-setting",
+			name = "UMModulesRework-QualityModule-StartSpeedPenalty",
+			setting_type = "startup",
+			minimum_value = 0,
+			maximum_value = 10,
+			default_value = 0.05,
+			order = "63"
+		},
+		{
+			type = "double-setting",
+			name = "UMModulesRework-QualityModule-SpeedPenaltyMultiplierPerLevel",
+			setting_type = "startup",
+			minimum_value = 0.2,
+			maximum_value = 5,
+			default_value = 2,
+			order = "64"
+		}
+	})
+end
 
 if mods["RFT-modules"] then
 	data:extend({
