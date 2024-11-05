@@ -7,6 +7,12 @@ function UpdateSpeedModule(name, tier)
 		data.raw["module"][name].effect.consumption = 0
 	end
 
+	if(SmQualityPenalty) then
+		data.raw["module"][name].effect.quality = -Round(SmQualityStart * SmQualityMult ^ (tier - 1))
+	else
+		data.raw["module"][name].effect.quality = 0
+	end
+
 	if(SmPollutionPenalty) then
 		data.raw["module"][name].effect.pollution = Round(SmPollutionStart * SmPollutionMult ^ (tier - 1))
 	else
