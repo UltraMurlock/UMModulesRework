@@ -63,3 +63,7 @@ end
 if mods["space-exploration"] then
     require("compatibility-scripts.space-exploration")
 end
+
+if mods["secretas"] then
+    require("compatibility-scripts.secretas")
+end

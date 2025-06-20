@@ -4,6 +4,6 @@
   "title": "Modules Rework",
   "author": "UltraMurlock",
   "factorio_version": "2.0",
-  "dependencies": [ "base >= 2.0", "?quality", "?RFT-modules", "?modules-t4", "?space-exploration" ],
+  "dependencies": [ "base >= 2.0", "?quality", "?RFT-modules", "?modules-t4", "?space-exploration", "?secretas" ],
   "description": ""
 } 
