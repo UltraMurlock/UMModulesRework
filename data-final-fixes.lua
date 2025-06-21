@@ -67,3 +67,11 @@ end
 if mods["secretas"] then
     require("compatibility-scripts.secretas")
 end
+
+if mods["moar-modules"] then
+    require("compatibility-scripts.moar-modules.core")
+
+    if mods["quality"] then
+        require("compatibility-scripts.moar-modules.quality")
+    end
+end
